@@ -1,7 +1,7 @@
 import Header from '@/src/components/Header';
 import Card from '@/src/components/common/Card/Card';
 import Editor from '@/src/components/features/editor/Editor';
-import { browsers } from '@/src/utils/data';
+import { browsers } from '@/src/data';
 
 export default function Home() {
 	return (
