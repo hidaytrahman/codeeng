@@ -1,0 +1,173 @@
+import { generateRandomId } from "../core";
+
+
+export const browsers = [
+	{
+		id: generateRandomId(8),
+		title: 'chrome',
+		icon: 'chrome',
+		type: 'browser',
+		link: 'https://www.google.com/chrome/?brand=FNES&gclid=CjwKCAjwr_CnBhA0EiwAci5simgbuR-Vy3OymtTCiCitR9nJzlcBtiOK3R-oDcvViKxh-AfvNBFW0BoCXqMQAvD_BwE&gclsrc=aw.ds',
+		info: '',
+		extensions: [
+			{
+				id: generateRandomId(8),
+				title: 'React Developer Tools',
+				text: 'React Developer Tools is a Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies in the Chrome Developer Tools.',
+				link: 'https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Redux Dev Tools',
+				text: '',
+				link: 'https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'JSON Formatter',
+				text: 'Auto-formats JSON when you load it in a browser tab.',
+				link: 'https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa',
+			},
+		],
+	},
+	{
+		id: generateRandomId(8),
+		title: 'firefox',
+		icon: 'firefox',
+		type: 'browser',
+		link: 'https://www.mozilla.org/en-US/firefox/new/',
+		info: '',
+		extensions: [],
+	},
+	{
+		id: generateRandomId(8),
+		title: 'safari',
+		icon: 'safari',
+		type: 'browser',
+		link: 'https://support.apple.com/en_IN/downloads/safari',
+		info: '',
+		extensions: [],
+	},
+	{
+		id: generateRandomId(8),
+		title: 'edge',
+		icon: 'edge',
+		type: 'browser',
+		link: 'https://www.microsoft.com/en-in/edge/download?form=MA13FJ',
+		info: '',
+		extensions: [],
+	},
+];
+
+export const editors = [
+	{
+		id: generateRandomId(8),
+		title: 'VSCode',
+		icon: 'vscode',
+		avatar: 'https://vscode-icons-team.gallerycdn.vsassets.io/extensions/vscode-icons-team/vscode-icons/12.6.0/1697899327455/Microsoft.VisualStudio.Services.Icons.Default',
+		type: 'editor',
+		link: 'https://code.visualstudio.com/download',
+		text: 'Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.',
+		extensions: [
+			{
+				id: generateRandomId(8),
+				title: 'Simple React Snippets',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=burkeholland.simple-react-snippets',
+				avatar: 'https://burkeholland.gallerycdn.vsassets.io/extensions/burkeholland/simple-react-snippets/1.2.7/1663085328803/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'REST Client',
+				text: 'REST Client allows you to send HTTP request and view the response in Visual Studio Code directly.',
+				link: 'https://marketplace.visualstudio.com/items?itemName=humao.rest-client',
+				avatar: 'https://humao.gallerycdn.vsassets.io/extensions/humao/rest-client/0.25.1/1660918934840/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Tailwind CSS IntelliSense',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss',
+				avatar: 'https://bradlc.gallerycdn.vsassets.io/extensions/bradlc/vscode-tailwindcss/0.11.36/1703195830472/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'WakaTime',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=WakaTime.vscode-wakatime',
+				avatar: 'https://wakatime.gallerycdn.vsassets.io/extensions/wakatime/vscode-wakatime/24.4.0/1698913903501/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Prettier - Code formatter',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode',
+				avatar: 'https://esbenp.gallerycdn.vsassets.io/extensions/esbenp/prettier-vscode/10.1.0/1690819498575/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Path Intellisense',
+				text: 'Visual Studio Code plugin that autocompletes filenames',
+				link: 'https://marketplace.visualstudio.com/items?itemName=christian-kohler.path-intellisense',
+				avatar: 'https://christian-kohler.gallerycdn.vsassets.io/extensions/christian-kohler/path-intellisense/2.8.5/1696705231022/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'npm Intellisense',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=christian-kohler.npm-intellisense',
+				avatar: 'https://christian-kohler.gallerycdn.vsassets.io/extensions/christian-kohler/npm-intellisense/1.4.5/1696702951497/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Js Runner',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=ZolarDev.js-runner',
+				avatar: 'https://zolardev.gallerycdn.vsassets.io/extensions/zolardev/js-runner/3.2.0/1573979942519/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Git History',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory',
+				avatar: 'https://donjayamanne.gallerycdn.vsassets.io/extensions/donjayamanne/githistory/0.6.20/1678008598739/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'ESLint',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint',
+				avatar: 'https://dbaeumer.gallerycdn.vsassets.io/extensions/dbaeumer/vscode-eslint/2.4.2/1687441427519/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Color the tag name（タグに色つけ太郎）',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=jzmstrjp.color-the-tag-name',
+				avatar: 'https://jzmstrjp.gallerycdn.vsassets.io/extensions/jzmstrjp/color-the-tag-name/0.19.8/1619520992309/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Color Picker',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color',
+				avatar: 'https://anseki.gallerycdn.vsassets.io/extensions/anseki/vscode-color/0.4.5/1501839487317/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+
+			{
+				id: generateRandomId(8),
+				title: 'Color Highlight',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight',
+				avatar: 'https://naumovs.gallerycdn.vsassets.io/extensions/naumovs/color-highlight/2.5.0/1631530639439/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+			{
+				id: generateRandomId(8),
+				title: 'Better Comments',
+				text: '',
+				link: 'https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments',
+				avatar: 'https://aaron-bond.gallerycdn.vsassets.io/extensions/aaron-bond/better-comments/3.0.2/1659144495902/Microsoft.VisualStudio.Services.Icons.Default',
+			},
+		],
+	},
+];
