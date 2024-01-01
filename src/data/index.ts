@@ -5,7 +5,7 @@ export const browsers = [
 	{
 		id: generateRandomId(8),
 		title: 'chrome',
-		icon: 'chrome',
+		avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Google_Chrome_icon_%28February_2022%29.svg/640px-Google_Chrome_icon_%28February_2022%29.svg.png',
 		type: 'browser',
 		link: 'https://www.google.com/chrome/?brand=FNES&gclid=CjwKCAjwr_CnBhA0EiwAci5simgbuR-Vy3OymtTCiCitR9nJzlcBtiOK3R-oDcvViKxh-AfvNBFW0BoCXqMQAvD_BwE&gclsrc=aw.ds',
 		info: '',
@@ -33,7 +33,7 @@ export const browsers = [
 	{
 		id: generateRandomId(8),
 		title: 'firefox',
-		icon: 'firefox',
+		avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Firefox_logo%2C_2019.svg/1200px-Firefox_logo%2C_2019.svg.png',
 		type: 'browser',
 		link: 'https://www.mozilla.org/en-US/firefox/new/',
 		info: '',
@@ -42,7 +42,7 @@ export const browsers = [
 	{
 		id: generateRandomId(8),
 		title: 'safari',
-		icon: 'safari',
+		avatar: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Safari_browser_logo.svg/2057px-Safari_browser_logo.svg.png',
 		type: 'browser',
 		link: 'https://support.apple.com/en_IN/downloads/safari',
 		info: '',
@@ -51,7 +51,7 @@ export const browsers = [
 	{
 		id: generateRandomId(8),
 		title: 'edge',
-		icon: 'edge',
+		avatar: 'https://play-lh.googleusercontent.com/VYvJqGnrQiKkbbyLyMeiL-GM3go4tBIA64uVEGQazLXD4p_M3F45kHyt42o_6d5VXA',
 		type: 'browser',
 		link: 'https://www.microsoft.com/en-in/edge/download?form=MA13FJ',
 		info: '',
