@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Anchor from '../../core/Anchor';
 
 type EntityExtendMorePropsTypes = {
 	sections: any[];
@@ -53,42 +54,6 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 																		<li key={index}>
 																			<div className='flex space-x-4 px-3 py-2.5 rounded hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition'>
 																				<div className='shrink-0 flex items-center justify-center h-9 w-9 rounded bg-white border border-slate-200'>
-																					{/* <svg
-																			xmlns='http://www.w3.org/2000/svg'
-																			width='16'
-																			height='14'
-																		>
-																			<rect
-																				width='3'
-																				height='2'
-																				fill='#6366F1'
-																				rx='.5'
-																			/>
-																			<rect
-																				width='3'
-																				height='2'
-																				x='13'
-																				y='12'
-																				fill='#A5B4FC'
-																				rx='.5'
-																			/>
-																			<rect
-																				width='7'
-																				height='2'
-																				x='2'
-																				y='4'
-																				fill='#A5B4FC'
-																				rx='.5'
-																			/>
-																			<rect
-																				width='9'
-																				height='2'
-																				x='5'
-																				y='8'
-																				fill='#6366F1'
-																				rx='.5'
-																			/>
-																		</svg> */}
 																					<img src={avatar} alt='' />
 																				</div>
 																				<div>
@@ -99,28 +64,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 																						{text}
 																					</div>
 																					<div>
-																						<a
-																							href={link}
-																							className='inline-flex items-center text-blue-600 hover:underline'
-																							target='_blank'
-																						>
-																							Download
-																							<svg
-																								className='w-3 h-3 ms-2.5 rtl:rotate-[270deg]'
-																								aria-hidden='true'
-																								xmlns='http://www.w3.org/2000/svg'
-																								fill='none'
-																								viewBox='0 0 18 18'
-																							>
-																								<path
-																									stroke='currentColor'
-																									strokeLinecap='round'
-																									strokeLinejoin='round'
-																									strokeWidth='2'
-																									d='M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778'
-																								/>
-																							</svg>
-																						</a>
+																						<Anchor link={link} />
 																					</div>
 																				</div>
 																			</div>
