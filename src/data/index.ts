@@ -1,4 +1,4 @@
-import { generateRandomId } from "../core";
+import { generateRandomId } from "../utils/core";
 
 
 export const browsers = [
