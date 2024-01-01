@@ -9,7 +9,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 
 	return (
 		<div>
-			<main className='relative  bg-slate-50'>
+			<main className='relative bg-slate-50'>
 				<button
 					type='button'
 					className='grow flex items-center justify-end pl-4'
@@ -27,10 +27,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 				<div className='w-full max-w-5xl mx-auto md:px-6 '>
 					{/* <!-- Expandable header --> */}
 					{expanded ? (
-						<header
-							className='relative before:absolute before:inset-0 before:rounded-lg before:shadow-xl before:shadow-slate-900/5 before:bg-white before:transition-all before:duration-500 before:ease-[cubic-bezier(.5,.85,.25,1.8)]'
-							// className="expanded ? 'before:-inset-2 before:top-0' : 'before:inset-0'"
-						>
+						<header className='relative before:absolute before:inset-0 before:rounded-lg before:shadow-xl before:shadow-slate-900/5 before:bg-white before:transition-all before:duration-500 before:ease-[cubic-bezier(.5,.85,.25,1.8)]'>
 							<div className='relative'>
 								<nav
 									id='menu'
@@ -39,11 +36,11 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 									className='grid text-sm text-slate-600 overflow-hidden transition-all duration-500 ease-[cubic-bezier(.5,.85,.25,1.8)] [&[x-cloak]]:hidden'
 								>
 									<div className='overflow-hidden before:block before:w-full before:h-px before:bg-gradient-to-r before:from-transparent before:via-slate-200 before:to-transparent'>
-										<div className='px-4 md:px-6 py-8'>
+										<div className='px-2 md:px-0 py-6'>
 											<div className='space-y-8 lg:flex lg:space-x-12 lg:space-y-0'>
 												<div className='space-y-8 lg:w-3/4 md:flex md:space-x-6 md:space-y-0'>
 													{sections.map(({ title, list }, index) => (
-														<div className='md:w-1/2' key={index}>
+														<div className='' key={index}>
 															<div className='text-xs uppercase font-semibold text-slate-400 mb-3'>
 																{title}
 															</div>
@@ -54,10 +51,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 																		index: number
 																	) => (
 																		<li key={index}>
-																			<a
-																				className='flex space-x-4 px-3 py-2.5 rounded hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition'
-																				href='#0'
-																			>
+																			<div className='flex space-x-4 px-3 py-2.5 rounded hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition'>
 																				<div className='shrink-0 flex items-center justify-center h-9 w-9 rounded bg-white border border-slate-200'>
 																					{/* <svg
 																			xmlns='http://www.w3.org/2000/svg'
@@ -120,16 +114,16 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 																							>
 																								<path
 																									stroke='currentColor'
-																									stroke-linecap='round'
-																									stroke-linejoin='round'
-																									stroke-width='2'
+																									strokeLinecap='round'
+																									strokeLinejoin='round'
+																									strokeWidth='2'
 																									d='M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778'
 																								/>
 																							</svg>
 																						</a>
 																					</div>
 																				</div>
-																			</a>
+																			</div>
 																		</li>
 																	)
 																)}

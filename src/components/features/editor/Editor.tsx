@@ -1,10 +1,35 @@
-import { editors } from '@/utils/data';
+'use client';
+
 import EntityExtendMore from '../../common/EntityExtendMore/EntityExtendMore';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+import Skeleton from '../../common/Skeleton/Skeleton';
 
 function Editor() {
+	const [editors, setEditors] = useState([]);
+	const [loading, setLoading] = useState(false);
+
+	useEffect(() => {
+		async function fetchEditorsData() {
+			try {
+				setLoading(true);
+				const { data } = await axios.get('/api/editors');
+				console.log({ data });
+				setEditors(data);
+				setLoading(false);
+			} catch (e) {
+				console.log(e);
+				setLoading(false);
+			}
+		}
+
+		fetchEditorsData();
+	}, []);
+
 	return (
 		<section className='mt-10'>
 			<h3 className='text-2xl mb-3 font-bold leading-7 text-gray-900'>Editors</h3>
+			{loading ? <Skeleton type='image' /> : null}
 			{editors?.map(({ title, link, extensions, avatar }, index) => (
 				<div className='capitlise' key={index}>
 					<div className='flex items-center gap-2 mb-5'>
