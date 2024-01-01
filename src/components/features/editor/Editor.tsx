@@ -1,4 +1,4 @@
-import { editors } from '@/utils/data';
+import { editors } from '@/src/utils/data';
 import EntityExtendMore from '../../common/EntityExtendMore/EntityExtendMore';
 
 function Editor() {

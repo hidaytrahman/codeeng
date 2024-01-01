@@ -1,7 +1,7 @@
-import Header from '@/components/Header';
-import Card from '@/components/common/Card/Card';
-import Editor from '@/components/features/editor/Editor';
-import { browsers } from '@/utils/data';
+import Header from '@/src/components/Header';
+import Card from '@/src/components/common/Card/Card';
+import Editor from '@/src/components/features/editor/Editor';
+import { browsers } from '@/src/utils/data';
 
 export default function Home() {
 	return (
@@ -9,7 +9,7 @@ export default function Home() {
 			<Header />
 			<br />
 			<section>
-				<h2 className='text-base font-semibold leading-7 text-gray-900'>Browsers</h2>
+				<h3 className='text-2xl mb-3 font-bold leading-7 text-gray-900'>Browsers</h3>
 				<div className='flex gap-3'>
 					{browsers?.map((browser, index) => (
 						<Card key={index} title={browser.title} link={browser.link} info={browser.info} />

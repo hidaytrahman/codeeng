@@ -9,7 +9,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 
 	return (
 		<div>
-			<main className='relative  bg-slate-50'>
+			<main className='relative bg-slate-50'>
 				<button
 					type='button'
 					className='grow flex items-center justify-end pl-4'
@@ -54,10 +54,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 																		index: number
 																	) => (
 																		<li key={index}>
-																			<a
-																				className='flex space-x-4 px-3 py-2.5 rounded hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition'
-																				href='#0'
-																			>
+																			<div className='flex space-x-4 px-3 py-2.5 rounded hover:bg-slate-50 focus-visible:outline-none focus-visible:ring focus-visible:ring-indigo-300 transition'>
 																				<div className='shrink-0 flex items-center justify-center h-9 w-9 rounded bg-white border border-slate-200'>
 																					{/* <svg
 																			xmlns='http://www.w3.org/2000/svg'
@@ -129,7 +126,7 @@ function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
 																						</a>
 																					</div>
 																				</div>
-																			</a>
+																			</div>
 																		</li>
 																	)
 																)}
