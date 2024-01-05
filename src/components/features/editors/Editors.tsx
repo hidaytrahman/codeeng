@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 import Skeleton from '../../common/Skeleton/Skeleton';
 import Anchor from '../../core/Anchor';
 
-function Editor() {
+function Editors() {
 	const [editors, setEditors] = useState([]);
 	const [loading, setLoading] = useState(false);
 
@@ -76,4 +76,4 @@ function Editor() {
 	);
 }
 
-export default Editor;
+export default Editors;

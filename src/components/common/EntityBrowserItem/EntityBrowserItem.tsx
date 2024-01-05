@@ -19,7 +19,10 @@ export default function EntityBrowserItem({ title, link, info, avatar }: CardPro
 				</h5>
 
 				<p className='mb-3 font-normal text-gray-500 dark:text-gray-400'>{info}</p>
-				<Anchor link={link} />
+
+				<div className='shrink-0 p-2 flex items-center justify-center'>
+					<Anchor link={link} />
+				</div>
 			</div>
 		</div>
 	);

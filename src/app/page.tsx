@@ -1,16 +1,18 @@
-import Header from '@/src/components/Header';
-import Editor from '@/src/components/features/editor/Editor';
-import { browsers } from '@/src/data';
-import EntityBrowserItem from '../components/common/EntityBrowserItem/EntityBrowserItem';
+import Editor from '@/src/components/features/editors/Editors';
 import Browsers from '../components/features/browsers/browsers';
+import Banner from '../components/core/Banner';
 
 export default function Home() {
 	return (
-		<main className='flex min-h-screen flex-col items-center justify-between p-24'>
-			<Header />
-			<br />
-			<Browsers />
-			<Editor />
+		<main>
+			<article className=''>
+				<Banner
+					titles={['Code environment basic', ' and required setup']}
+					text="At Codeeng, we believe in empowering developers by providing a comprehensive resource hub for setting up and optimizing coding environments. Whether you're a seasoned developer or just starting your coding journey, our platform is designed to guide you through essential installations and configurations to create a seamless coding experience"
+				/>
+				{/* <Browsers />
+				<Editor /> */}
+			</article>
 		</main>
 	);
 }
