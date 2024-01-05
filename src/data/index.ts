@@ -182,4 +182,17 @@ export const editors = [
 			},
 		],
 	},
+
+	{
+		id: generateRandomId(8),
+		title: 'Brackets',
+		icon: 'brackets',
+		avatar: 'https://brackets.io/img/brackets.svg',
+		type: 'editor',
+		link: 'https://brackets.io/',
+		text: 'Modern, Powerful & Open source',
+		extensions: [
+
+		],
+	},
 ];

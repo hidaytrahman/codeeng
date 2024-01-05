@@ -38,7 +38,7 @@ function Browsers() {
 					<Skeleton type='image' />
 				</div>
 			) : null}
-			<div className='flex gap-3'>
+			<div className='flex gap-3 flex-wrap'>
 				{browsers?.map((browser: any, index) => (
 					<EntityBrowserItem
 						key={browser.id}
