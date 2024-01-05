@@ -8,10 +8,10 @@ function Footer() {
 					<h2 className='text-3xl font-extrabold text-gray-900 sm:text-5xl'>Collaborate and Simplified</h2>
 
 					<p className='mx-auto mt-4 max-w-lg text-gray-500'>
-						Codeeng is not just an app; it's a community-driven platform created by developers for
-						developers. Whether you're looking to set up your coding environment, collaborate on projects,
-						or stay updated on industry trends, DevHub is your go-to destination. Join our growing community
-						today and unlock the full potential of your development journey!
+						Codeeng is not just an app; it&apos;s a community-driven platform created by developers for
+						developers. Whether you&apos;re looking to set up your coding environment, collaborate on
+						projects, or stay updated on industry trends, DevHub is your go-to destination. Join our growing
+						community today and unlock the full potential of your development journey!
 					</p>
 
 					{/* <div className='mt-8 flex flex-wrap justify-center gap-4'>
