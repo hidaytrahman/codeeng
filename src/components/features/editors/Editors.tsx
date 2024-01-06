@@ -3,11 +3,10 @@ import EntityExtendMore from '../../common/EntityExtendMore/EntityExtendMore';
 import { useCallback, useEffect, useState } from 'react';
 import Skeleton from '../../common/Skeleton/Skeleton';
 import Anchor from '../../core/Anchor';
-import { EditorTypes } from './types';
-import { API_ENDPOINTS } from '@/config/API.config';
 
-// SERVICES
+import { API_ENDPOINTS } from '@/config/API.config';
 import { HttpService } from '@/services';
+import { EditorTypes } from './types';
 
 function Editors() {
 	const http = new HttpService();
@@ -18,7 +17,7 @@ function Editors() {
 	const fetchEditorsData = useCallback(async () => {
 		try {
 			setLoading(true);
-			const data = await http.service().get<any[]>(API_ENDPOINTS.editors);
+			const data = await http.service().get<any[]>(API_ENDPOINTS.EDITORS);
 
 			// console.log(data);
 			setEditors(data);

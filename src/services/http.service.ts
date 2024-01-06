@@ -1,5 +1,3 @@
-
-
 import axios, { AxiosInstance, AxiosResponse, AxiosRequestConfig } from "axios";
 
 // COOKIES
@@ -13,7 +11,6 @@ export class HttpService {
     private baseURL = process.env.NEXT_PUBLIC_BASE_URL;
 
     constructor() {
-
         console.log('base url ', this.baseURL)
         this.http = axios.create({
             baseURL: this.baseURL,

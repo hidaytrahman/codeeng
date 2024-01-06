@@ -1,4 +1,4 @@
-import Editors from '@/components/features/editors/Editors';
+import Editors from '@/components/features/Editors/Editors';
 
 export default function EditorPage() {
 	return <Editors />;
