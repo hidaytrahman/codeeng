@@ -7,7 +7,7 @@ export type EditorExtension = {
     text: string
 }
 
-export type Editor = {
+export type EditorTypes = {
     id: string,
     title: string,
     icon: string,
