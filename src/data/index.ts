@@ -9,6 +9,7 @@ export const browsers = [
 		type: 'browser',
 		link: 'https://www.google.com/chrome/?brand=FNES&gclid=CjwKCAjwr_CnBhA0EiwAci5simgbuR-Vy3OymtTCiCitR9nJzlcBtiOK3R-oDcvViKxh-AfvNBFW0BoCXqMQAvD_BwE&gclsrc=aw.ds',
 		info: 'Google Chrome is a cross-platform web browser developed by Google.',
+		isInstalled: false,
 		extensions: [
 			{
 				id: generateRandomId(8),
@@ -38,6 +39,7 @@ export const browsers = [
 		link: 'https://www.mozilla.org/en-US/firefox/new/',
 		info: 'Mozilla Firefox, or simply Firefox, is a free and open-source web browser developed by the Mozilla Foundation',
 		extensions: [],
+		isInstalled: false,
 	},
 	{
 		id: generateRandomId(8),
@@ -47,6 +49,7 @@ export const browsers = [
 		link: 'https://support.apple.com/en_IN/downloads/safari',
 		info: 'Safari is a web browser developed by Apple that\'s built into Apple\'s operating systems',
 		extensions: [],
+		isInstalled: false,
 	},
 	{
 		id: generateRandomId(8),
@@ -56,6 +59,7 @@ export const browsers = [
 		link: 'https://www.microsoft.com/en-in/edge/download?form=MA13FJ',
 		info: 'Microsoft Edge is the web browser developed by Microsoft. It was first released in 2015 as the successor to Internet Explorer and is based on Google\'s Chromium.',
 		extensions: [],
+		isInstalled: false,
 	},
 	{
 		id: generateRandomId(8),
@@ -65,6 +69,7 @@ export const browsers = [
 		link: 'https://duckduckgo.com/',
 		info: 'Search and browse more privately with the DuckDuckGo browser. Unlike Chrome and other browsers, we don\'t track you',
 		extensions: [],
+		isInstalled: false,
 	},
 
 

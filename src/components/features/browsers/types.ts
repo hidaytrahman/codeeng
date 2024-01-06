@@ -1,8 +1,8 @@
 export type BrowserExtension = {
     id: string,
     title: string,
-    avatar: string,
-    type: string,
+    avatar?: string,
+    type?: string,
     link: string,
     text: string
 }
@@ -10,10 +10,11 @@ export type BrowserExtension = {
 export type BrowserTypes = {
     id: string,
     title: string,
-    icon: string,
+    icon?: string,
     avatar: string,
     type: string,
     link: string,
-    text: string
+    text?: string
     extensions: BrowserExtension[]
+    isInstalled: boolean
 }
