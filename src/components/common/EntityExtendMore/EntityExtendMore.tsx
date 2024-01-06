@@ -6,29 +6,29 @@ type EntityExtendMorePropsTypes = {
 	sections: any[];
 };
 function EntityExtendMore({ sections }: EntityExtendMorePropsTypes) {
-	const [expanded, setExpanded] = useState<boolean>(true);
+	const [expanded, setExpanded] = useState<boolean>(false);
 
 	return (
 		<div>
-			<main className='relative bg-slate-50'>
+			<main className='relative p-4 bg-slate-50'>
 				<button
 					type='button'
-					className='grow flex items-center justify-end pl-4'
+					className='grow flex items-center justify-end'
 					onClick={() => {
 						setExpanded(!expanded);
 					}}
 					aria-controls='menu'
 				>
-					<div className='flex justify-between items-center'>
+					<div className='flex justify-between items-center py-4'>
 						<div>Extensions {expanded ? '[-]' : '[+]'}</div>
 					</div>
 				</button>
 
 				<hr />
-				<div className='w-full max-w-5xl mx-auto md:px-6 '>
+				<div className='w-full max-w-5xl mx-auto '>
 					{/* <!-- Expandable header --> */}
 					{expanded ? (
-						<header className='relative before:absolute before:inset-0 before:rounded-lg before:shadow-xl before:shadow-slate-900/5 before:bg-white before:transition-all before:duration-500 before:ease-[cubic-bezier(.5,.85,.25,1.8)]'>
+						<header className='relative before:absolute  before:inset-0 before:rounded-lg before:shadow-xl before:shadow-slate-900/5 before:bg-white before:transition-all before:duration-500 before:ease-[cubic-bezier(.5,.85,.25,1.8)]'>
 							<div className='relative'>
 								<nav
 									id='menu'
