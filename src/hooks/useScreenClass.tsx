@@ -8,12 +8,14 @@ function useScreenClass() {
 	const width: number = useScreenWidth();
 
 	const getResponsiveClass = useCallback(() => {
-		if (width >= 640) {
-			return 'sm';
+		if (width >= 1024) {
+			return 'lg';
 		} else if (width >= 768) {
 			return 'md';
-		} else if (width >= 1024) {
-			return 'lg';
+		} else if (width >= 640) {
+			return 'sm';
+		} else {
+			return 'xs';
 		}
 	}, [width]);
 	return getResponsiveClass;

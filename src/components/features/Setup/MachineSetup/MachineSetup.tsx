@@ -6,7 +6,7 @@ import { AppListTypes } from './types';
 import { BrowserTypes } from '../../Browsers/types';
 
 function MachineSetup() {
-	const [installaton, setInstallation] = useState(null);
+	
 	const [appList, setAppList] = useState<BrowserTypes[]>(browsers);
 
 	return (
