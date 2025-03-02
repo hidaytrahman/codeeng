@@ -1,4 +1,4 @@
-import { browsers, editors } from '@/src/data';
+import { browsers } from '@/data';
 import { NextResponse } from 'next/server';
 
 type ResponseData = {
