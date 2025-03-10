@@ -36,6 +36,15 @@ jobs:
                   git add .
                   git commit -m "Update daily activities file" || echo "No changes to commit"
 
+            - name: Create branch if it doesn't exist
+              run: |
+               if ! git show-ref --quiet refs/remotes/origin/auto-update-branch; then
+               git checkout -b auto-update-branch
+               git push origin auto-update-branch
+               else
+                git checkout auto-update-branch
+             fi
+
             - name: Push changes
               if: steps.commit.outcome == 'success'
               uses: ad-m/github-push-action@master
