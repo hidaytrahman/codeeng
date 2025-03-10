@@ -4,6 +4,14 @@ export const mainNavList = [
         url: '/'
     },
     {
+        name: 'Package Managers',
+        url: '/package-managers'
+    },
+    {
+        name: 'Version Control',
+        url: '/version-control'
+    },
+    {
         name: 'Browsers',
         url: '/browsers'
     },
