@@ -68,7 +68,7 @@ jobs:
               run: |
                   PR_NUMBER=$(gh pr list --state open --json number --jq '.[0].number')
                   if [ -n "$PR_NUMBER" ]; then
-                      gh pr merge $PR_NUMBER --merge --delete-branch
+                      gh pr merge $PR_NUMBER --merge --delete-branch --admin
                   fi
               env:
                   GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
