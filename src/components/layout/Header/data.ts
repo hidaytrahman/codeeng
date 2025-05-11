@@ -1,9 +1,5 @@
 export const mainNavList = [
     {
-        name: 'Home',
-        url: '/'
-    },
-    {
         name: 'Package Managers',
         url: '/package-managers'
     },

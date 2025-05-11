@@ -1,4 +1,13 @@
 import React from 'react';
+import {
+  Box,
+  Typography,
+  Card,
+  CardContent,
+  Button,
+  Stack,
+} from '@mui/material';
+import Grid from '@mui/material/Grid';
 
 interface PackageManager {
   name: string;
@@ -34,34 +43,79 @@ const packageManagers: PackageManager[] = [
 
 export default function PackageManagers() {
   return (
-    <div className="p-4">
-      <h1 className="text-3xl font-bold mb-6">Package Managers Setup Guide</h1>
-      <div className="grid gap-6">
+    <Box p={4}>
+      <Typography variant="h3" fontWeight={700} mb={6}>
+        Package Managers Setup Guide
+      </Typography>
+      <Grid container spacing={3}>
         {packageManagers.map((manager) => (
-          <div key={manager.name} className="bg-white p-6 rounded-lg shadow-md">
-            <h2 className="text-2xl font-semibold mb-2">{manager.name}</h2>
-            <p className="text-gray-600 mb-4">{manager.description}</p>
-            <div className="space-y-4">
-              <div>
-                <h3 className="font-semibold mb-2">Installation</h3>
-                <code className="bg-gray-100 p-2 rounded block">{manager.installCommand}</code>
-              </div>
-              <div>
-                <h3 className="font-semibold mb-2">Verify Installation</h3>
-                <code className="bg-gray-100 p-2 rounded block">{manager.verifyCommand}</code>
-              </div>
-              <a
-                href={manager.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-600"
-              >
-                Official Documentation →
-              </a>
-            </div>
-          </div>
+          <Grid key={manager.name}
+          sx={{xs: 12, md: 6, lg: 4, display: 'flex', justifyContent: 'center'}}>
+            <Card elevation={3} sx={{ borderRadius: 2, height: '100%' }}>
+              <CardContent>
+                <Typography variant="h5" fontWeight={600} gutterBottom>
+                  {manager.name}
+                </Typography>
+                <Typography color="text.secondary" mb={2}>
+                  {manager.description}
+                </Typography>
+                <Stack spacing={2} mb={2}>
+                  <Box>
+                    <Typography variant="subtitle1" fontWeight={600}>
+                      Installation
+                    </Typography>
+                    <Box
+                      component="code"
+                      sx={{
+                        display: 'block',
+                        bgcolor: 'grey.100',
+                        p: 1,
+                        borderRadius: 1,
+                        mt: 0.5,
+                        fontFamily: 'monospace',
+                        fontSize: '1rem',
+                        wordBreak: 'break-all',
+                      }}
+                    >
+                      {manager.installCommand}
+                    </Box>
+                  </Box>
+                  <Box>
+                    <Typography variant="subtitle1" fontWeight={600}>
+                      Verify Installation
+                    </Typography>
+                    <Box
+                      component="code"
+                      sx={{
+                        display: 'block',
+                        bgcolor: 'grey.100',
+                        p: 1,
+                        borderRadius: 1,
+                        mt: 0.5,
+                        fontFamily: 'monospace',
+                        fontSize: '1rem',
+                        wordBreak: 'break-all',
+                      }}
+                    >
+                      {manager.verifyCommand}
+                    </Box>
+                  </Box>
+                </Stack>
+                <Button
+                  href={manager.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="text"
+                  color="primary"
+                  sx={{ textTransform: 'none', fontWeight: 500 }}
+                >
+                  Official Documentation &rarr;
+                </Button>
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </div>
-    </div>
+      </Grid>
+    </Box>
   );
 }
