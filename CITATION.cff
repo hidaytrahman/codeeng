@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: codeeng
+authors:
+  - family-names: Rahman
+    given-names: Hidayt
+    orcid: https://orcid.org/0009-0004-7245-8229
+date-released: 2025-06-07
+version: 1.0.0
+repository-code: https://github.com/hidaytrahman/codeeng
+url: https://github.com/hidaytrahman/codeeng
+license: MIT
